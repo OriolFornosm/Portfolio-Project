@@ -9,6 +9,7 @@ body{
 
 .jumbotron{
 background-color: rgba(224, 246, 252, 0.589)!important;
+margin-bottom: 0 !important;
 }
 
 /* Navbar Style */
@@ -16,7 +17,7 @@ background-color: rgba(224, 246, 252, 0.589)!important;
   
   font-size: 1rem;
   letter-spacing: .1rem;
-  background-color: rgba(224, 246, 252, 0.8)!important;
+  background-color: rgba(224, 246, 252, 1)!important;
   
 
 }
@@ -47,12 +48,26 @@ background-color: rgba(224, 246, 252, 0.589)!important;
 
 /*Landing Page */
 
-.home-inner {
-  background-image: url("https://i.ibb.co/3RSZ4PT/laptopcode.jpg");
-filter: blur(3px);
--webkit-filter: blur(3px);
-opacity: 0.9;
-}
+/* Header Parallax Element Style*/ 
+.paral {
+  min-height: 600px;
+  z-index: -1; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  background-position: 50% 50%;
+  }
+
+  .paralsec {
+    background-image: url("https://i.ibb.co/3RSZ4PT/laptopcode.jpg");
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+
+    }
+
 
 .caption {
   width: 100%;
@@ -264,60 +279,5 @@ margin-right: 0px!important;
 -webkit-backface-visibility: hidden;
 }
 
-/*--- Fixed Welcome Page Section --*/
-.landing {
-position: relative;
-width: 100%;
-height: 100vh;
-display: table;
-z-index: -1;
-}
-.home-wrap {
-clip: rect(0, auto, auto, 0);
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-}
-.home-inner {
-position: fixed;
-display: table;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-size: cover;
-background-position: center center;
--webkit-transform: translateZ(0);
-        transform: translateZ(0);
-will-change: transform;
-}
 
-/*--- iOS Fixed Background Image --*/
-.fixed-background {
-position: relative;
-width: 100%;
-}
-.fixed-wrap {
-clip: rect(0, auto, auto, 0);
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-z-index: -999!important;
-}
-.fixed {
-position: fixed;
-display: block;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-size: cover;
-background-position: center center;
--webkit-transform: translateZ(0);
-        transform: translateZ(0);
-will-change: transform;
-}
+
